@@ -1,0 +1,138 @@
+/* Basic Preferences */
+
+:root {
+    --primary-color: rgb(110, 110, 110);
+    --secondary-color: gray;
+    --background-color: rgb(175, 175, 175);
+    --primary-text-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Layout */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 960px;
+    margin: .4rem auto;
+}
+
+#title,
+#subtitle {
+    text-align: center;
+}
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#img-div img {
+    width: 95%;
+    margin: .4rem auto;
+    max-width: max-content;
+}
+
+#img-div #img-caption {
+    text-align: center;
+}
+
+#tribute-info-paragraph {
+    text-align: center;
+}
+
+#tribute-info-ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+.tribute-info-separator {
+    margin: 0 .4rem 0 .4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tribute-readmore {
+    text-align: center;
+}
+
+/* Typograph and style */
+main {
+    background-color: var(--primary-color);
+    padding: 2.25rem;
+    border-radius: 1.125rem;
+}
+
+#title {
+    font-size: 2.5rem;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+#subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 1.125rem;
+    text-decoration: underline;
+}
+
+#img-div {
+    background-color: var(--secondary-color);
+    padding: 1.125rem;
+    border-radius: .4rem;
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem;
+}
+
+#img-caption {
+    font-size: 1rem;
+}
+
+#tribute-info-paragraph {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 1.125rem;
+}
+
+.tribute-info-year {
+    font-weight: 600;
+}
+
+li {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+
+.tribute-timeline-description {
+    text-align: justify;
+}
+
+#tribute-readmore {
+    margin-top: 1.125rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+blockquote {
+    max-width: 480px;
+    margin: .25rem auto;
+    text-align: justify;
+    font-size: .85rem;
+    font-style: italic;
+}
+
+blockquote p {
+    margin-bottom: 1.125rem;
+}
